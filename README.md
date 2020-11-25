@@ -1,4 +1,4 @@
-`Swisschain.Extensions.EfCore`
+[Swisschain.Extensions.EfCore](https://www.nuget.org/packages/Swisschain.Extensions.EfCore) Nuget library
 
 Entity Framework Core extensions
 
