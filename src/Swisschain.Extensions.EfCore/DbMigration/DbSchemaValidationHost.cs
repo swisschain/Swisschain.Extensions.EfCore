@@ -39,7 +39,10 @@ namespace Swisschain.Extensions.EfCore.DbMigration
                     {
                         throw new InvalidOperationException("There are pending migrations, service will be terminated");
                     }
+
                     _logger.LogError("There are pending migrations, will be retried in 10 seconds");
+
+                    await Task.Delay(TimeSpan.FromSeconds(10), cancellationToken);
                 }
                 else
                 {
